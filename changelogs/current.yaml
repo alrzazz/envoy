@@ -37,6 +37,10 @@ minor_behavior_changes:
 
 bug_fixes:
 # *Changes expected to improve the state of the world and are unlikely to have negative effects*
+- area: redis_proxy
+  change: |
+    Added support for Redis hash field expiration commands such as ``HEXPIRE`` in the
+    ``redis_proxy`` network filter.
 - area: load_report
   change: |
     Fixed a bug in load stats reporting where reports were dropped if only custom metrics or completed
