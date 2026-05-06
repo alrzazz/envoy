@@ -35,12 +35,14 @@ minor_behavior_changes:
     for cases where the scrape results in lots of cluster stats.
     There should be no visible changes to users, or incompatibilities.
 
-bug_fixes:
-# *Changes expected to improve the state of the world and are unlikely to have negative effects*
+new_features:
 - area: redis_proxy
   change: |
     Added support for Redis hash field expiration commands such as ``HEXPIRE`` in the
     ``redis_proxy`` network filter.
+
+bug_fixes:
+# *Changes expected to improve the state of the world and are unlikely to have negative effects*
 - area: load_report
   change: |
     Fixed a bug in load stats reporting where reports were dropped if only custom metrics or completed
